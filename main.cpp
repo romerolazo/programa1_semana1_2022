@@ -6,12 +6,7 @@
 #endif
 #include <iostream>
 #include <stdlib.h>
-/*
-    Integrantes:
-    Romero Lazo Cristhian Michael
-    Tolentino Leon Ernesto Mihael
 
-*/
 float blanco[]={1,1,1};
 float negro[]={0,0,0},azul[]={0,0,1};
 float rojo[]={1,0,0},verde[]={0,1,0}, amarillo[]={1,1,0};
@@ -83,7 +78,7 @@ void display(void)
 {
 glClearColor(1,1,1,1);//color de la ventana negro
 glClear(GL_COLOR_BUFFER_BIT);
-//glPointSize(7); // incrementa el tamaño del punto
+//glPointSize(7); // incrementa el tamaÃ±o del punto
 //glLineWidth(5);//incrementa el ancho de la linea
 
 
@@ -115,11 +110,11 @@ int main(int argc, char *argv[])
 
     glutInit(&argc, argv);//Sirve para inicializar mi ventana de opengl
     glutInitWindowPosition(0,0);//parte la ventana en 4 partes y en (0,0) esta en el centro,posicion de mi ventana
-    glutInitWindowSize(600,600);//tamaño de mi ventana tamaño normal (600,600)
+    glutInitWindowSize(600,600);//tamaÃ±o de mi ventana tamaÃ±o normal (600,600)
     glutInitDisplayMode(GLUT_RGB|GLUT_DOUBLE|GLUT_DEPTH);//tipo de modo de visualizacion de la ventana
 
     glutCreateWindow("Primer programa");//Colocar el nombre que se le da a la ventana
-    glutDisplayFunc(display);//nombre de la función
+    glutDisplayFunc(display);//nombre de la funciÃ³n
     pantalla();
     //glClearColor(1,1,1,1);//color de la ventana negro
     glutMainLoop();//hace que aparezca la ventana
